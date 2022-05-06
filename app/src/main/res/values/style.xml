@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThem" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+   <style name="ToolBarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+       <item name="android:textColorPrimary">@android:color/white</item>
+       <item name="android:textColorSecondary">#EEEEEE</item>
+
+   </style>
+</resources>

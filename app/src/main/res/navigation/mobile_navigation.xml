@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/lookUpCity">
+
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.example.lookupweather.ui.fragments.CurrentWeatherFragment"
+        android:label="current_weather_fragment"
+        tools:layout="@layout/fragment_current_weather" />
+    <fragment
+        android:id="@+id/futureListWeatherFragment"
+        android:name="com.example.lookupweather.ui.fragments.WeekFragment"
+        android:label="future_list_weather_fragment"
+        tools:layout="@layout/week_weather_list" >
+        <action
+            android:id="@+id/actionDetail"
+            app:destination="@id/currentWeatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lookUpCity"
+        android:name="com.example.lookupweather.ui.fragments.LookUpCity"
+        android:label="LookUpCity" >
+        <action
+            android:id="@+id/action_lookUpCity_to_futureListWeatherFragment2"
+            app:destination="@id/futureListWeatherFragment" />
+    </fragment>
+
+</navigation>
